@@ -1,0 +1,12 @@
+# INSTALL DEPENDENCIES
+For Backend - npm i
+For Frontend - cd frontend / npm i
+
+# ENV VARIABLES
+
+PORT
+DB_URI
+FRONTEND_URL
+JWT_SECRET
+JWT_EXPIRE
+COOKIE_EXPIRE
