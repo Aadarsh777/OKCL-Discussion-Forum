@@ -1,0 +1,97 @@
+.createTopic {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 5vmax auto;
+}
+
+.createTopic > h1 {
+  text-decoration: underline;
+  font: 200 2vmax "Roboto";
+  margin: 2vmax auto;
+  color: rgb(26, 173, 179);
+}
+
+.createTopic > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 5px 12px rgba(225, 225, 225, 0.974);
+  padding: 4vmax;
+  width: 50%;
+}
+
+.topicInput {
+  width: 50%;
+  padding: 1vmax;
+  margin: 0.5vmax auto;
+  text-align: center;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgba(225, 225, 225, 0.974) inset;
+  color: rgb(5, 66, 66);
+}
+
+.topicInput:focus {
+  outline: none !important;
+}
+
+.topicTextArea {
+  width: 60%;
+  margin: 0.5vmax auto;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgba(225, 225, 225, 0.974) inset;
+  color: rgb(5, 66, 66);
+}
+
+.topicTextArea::placeholder {
+  text-align: center;
+}
+
+.topicTextArea:focus {
+  outline: none !important;
+}
+
+.createTopicButton {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(77, 205, 209);
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: 0.5vmax auto;
+  width: 20vmax;
+  height: 4vmax;
+  font-size: 2vmax;
+}
+
+.createTopicButton:hover {
+  background-color: rgb(26, 173, 179);
+}
+
+@media screen and (max-width: 800px) {
+  .createTopic > h1 {
+    font: 200 4vmax "Roboto";
+  }
+
+  .topicInput {
+    width: 80%;
+    padding: 2vmax;
+  }
+
+  .topicTextArea {
+    width: 80%;
+  }
+
+  .createTopicButton {
+    height: 6vmax;
+    font-size: 3vmax;
+  }
+}

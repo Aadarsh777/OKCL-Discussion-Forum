@@ -1,0 +1,83 @@
+.register {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.register > h1 {
+  font: 300 2vmax "Roboto";
+  text-decoration: underline;
+  margin-bottom: 2vmax;
+  color: rgb(0, 0, 0, 0.687);
+}
+
+.register-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgb(207, 209, 209);
+  padding: 6vmax 0;
+  padding-bottom: 4vmax;
+  border-radius: 20px;
+}
+
+.register-form > input {
+  width: 65%;
+  padding: 1vmax;
+  margin-bottom: 0.2vmax;
+  box-sizing: border-box;
+}
+
+.register-form > button {
+  padding: 1vmax 4vmax;
+  margin: 2vmax;
+  background-color: tomato;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 35%;
+}
+
+.register-form > p {
+  font: 100 1vmax cursive;
+  color: rgb(54, 53, 53);
+}
+
+.link {
+  text-decoration: underline;
+  margin-right: 0.4vmax;
+  color: rgb(177, 118, 108);
+}
+
+@media screen and (max-width: 1000px) {
+  .register-form {
+    width: 75%;
+  }
+
+  .register-form > input {
+    padding: 2vmax;
+  }
+
+  .register-form > button {
+    padding: 2vmax;
+    font-size: 2vmax;
+  }
+
+  .register > h1 {
+    font: 300 3vmax "Roboto";
+  }
+
+  .register-form > p {
+    font: 100 2vmax cursive;
+  }
+}

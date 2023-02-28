@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1vmax;
+  box-shadow: 0 2px 0 rgba(255, 255, 255);
+  background-color: #e7e7e7;
+  position: fixed;
+}
+
+.header-logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-items {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2vmax;
+  align-items: center;
+  margin-right: 4vmax;
+}
+
+.header-link {
+  text-decoration: none;
+}
+
+.header-span {
+  margin-right: 4vmax;
+  cursor: pointer;
+  font: 200 1.5vmax "Roboto";
+  color: rgba(0, 0, 0, 0.777);
+}
+
+.header-span:hover {
+  color: rgba(0, 0, 0, 0.616);
+}
+
+.me {
+  font: 200 2.2vmax;
+  color: tomato;
+  cursor: pointer;
+}
+
+.me:hover {
+  color: rgba(25, 25, 25, 0.717);
+}
+
+.logo {
+  height: 12vh;
+  width: 12vh;
+  border-radius: 100%;
+}
+
+.speedDial {
+  position: fixed;
+  right: 2vmax;
+  top: 1.5vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-span {
+    font-size: 2vmax;
+    margin-right: 9vmax;
+  }
+
+  .logo {
+    height: 10vh;
+    width: 10vh;
+    margin-left: 4vmax;
+  }
+
+  .me {
+    font-size: 3.5vmax;
+  }
+}

@@ -1,0 +1,142 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  padding: 2vmax;
+  margin-top: 10vmax;
+}
+
+.topic-button {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(77, 205, 209);
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin-bottom: 4vmax;
+  width: 20vmax;
+  height: 4vmax;
+}
+
+.topic-button:hover {
+  background-color: rgb(26, 173, 179);
+}
+
+.home > h1 {
+  text-align: center;
+  text-decoration: underline;
+  font: 200 3vmax "Roboto";
+}
+
+.topics-container {
+  display: flex;
+  margin: 4vmax 0;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+}
+
+.topics-list {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px rgb(212, 205, 205);
+  padding: 0 2vmax;
+  margin-top: 2vmax;
+  cursor: pointer;
+}
+
+.top-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-div > h3 {
+  font: 200 1.5vmax "Roboto";
+  padding: 0.5vmax 0;
+  color: rgba(0, 0, 0, 0.798);
+}
+
+.top-div > p {
+  font: 100 1vmax cursive;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5vmax 0;
+}
+
+.down-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.down-div-1 {
+  padding: 1vmax 0;
+  display: flex;
+}
+
+.down-div-1 > svg {
+  font-size: 1.7vmax;
+  padding: 0 0.5vmax;
+  color: rgba(0, 0, 0, 0.798);
+  cursor: pointer;
+}
+
+.down-div-1 > span {
+  margin-bottom: 2vmax;
+}
+
+.down-div-2 {
+  padding: 1vmax 0;
+  display: flex;
+}
+
+.down-div-2 > span {
+  display: flex;
+  margin: 0 2vmax;
+  font: 300 1.5vmax;
+}
+
+.pilink {
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.798);
+  box-shadow: 2px 2px rgb(212, 205, 205);
+}
+
+@media screen and (max-width: 1000px) {
+
+   .home {
+      margin-top: 14vmax;
+   }
+   .top-div > h3 {
+      font-size: 2.5vmax;
+   }
+
+   .top-div > p {
+      font-size: 2vmax;
+   }
+
+   .down-div-1 > svg {
+      font-size: 2.5vmax;
+      padding: 0 1vmax;
+   }
+
+   .topic-button {
+    height: 8vmax;
+    width: 40vh;
+   }
+}
+
+@media screen and (max-width: 850px) {
+  .down-div-1 > svg {
+    padding: 0.5vmax 1vmax;
+  }
+}

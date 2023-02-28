@@ -1,0 +1,235 @@
+.topicDetails {
+  margin-top: 7vmax;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  place-items: center;
+  background-color: #eeeeee;
+}
+
+.topic-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-bottom: 2vmax;
+  border: 2px solid rgba(97, 90, 90, 0.717);
+  padding: 0 4vmax;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.topic-container > h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 400 2.5vmax "Roboto";
+  text-decoration: underline;
+  padding: 2vmax 0;
+  color: rgb(67, 231, 231);
+}
+
+.topic-container .topic-detail {
+  display: flex;
+  font: 200 1.5vmax cursive;
+  padding: 1vmax 0;
+  color: rgba(2, 25, 25, 0.717);
+}
+
+.topic-container .topic-details {
+  display: flex;
+  font: 100 1vmax "Roboto";
+  padding: 2vmax;
+  border: 1px solid rgba(97, 90, 90, 0.417);
+  border-radius: 5px;
+  color: rgb(12, 12, 15);
+}
+.topic-container > div {
+  display: flex;
+  padding: 2vmax;
+  justify-content: space-between;
+}
+
+.topic-container > div > span {
+  display: flex;
+  padding: 0 1vmax;
+}
+
+.topic-container > div > span .reply-svg {
+  padding: 0 1vmax;
+  cursor: pointer;
+}
+
+.active > svg {
+  color: blue;
+}
+
+.topic-reply {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 2px solid rgba(97, 90, 90, 0.717);
+  padding: 0 4vmax;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.form-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 400 2.5vmax "Roboto";
+  text-decoration: underline;
+  padding: 2vmax 0;
+  color: rgb(67, 231, 231);
+}
+
+.form-reply {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-reply > textarea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vmax;
+}
+
+.form-reply > button {
+  width: 40%;
+  margin: 2vmax auto;
+  padding: 1vmax 2vmax;
+  border: none;
+  background-color: rgb(95, 188, 216);
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+
+.form-reply > button:hover {
+  background-color: #225866;
+}
+
+.replies-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.replies-container > h2 {
+  font: 500 2.5vmax "Roboto";
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(103, 163, 163);
+  margin: 2vmax;
+}
+
+.replies {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  width: 40%;
+  border: 2px solid rgba(97, 90, 90, 0.717);
+  padding: 0 2vmax;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-bottom: 2vmax;
+}
+
+.no-reply {
+  width: 100%;
+  padding: 2vmax;
+  text-align: center;
+  font: 300 2vmax cursive;
+  color:rgba(97, 90, 90, 0.917);
+}
+
+.reply-section {
+  display: flex;
+  flex-direction: column;
+  width: 200%;
+}
+
+.reply-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2vmax;
+}
+
+.reply-name > h4 {
+  font: 500 1.4vmax "Roboto";
+  color:rgba(2, 25, 25, 0.717);
+}
+
+.reply-name > svg {
+  color: white;
+  background-color: grey;
+  border-radius: 100%;
+  padding: 0.5vmax;
+  cursor: pointer;
+}
+
+.reply-comment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(97, 90, 90, 0.717);
+  padding: 2vmax;
+}
+
+.reply-comment > p {
+  font: 400 1.2vmax "Roboto";
+}
+
+.replies-vote {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vmax;
+}
+
+.replies-vote > span {
+  display: flex;
+}
+
+.replies-vote > span > svg {
+  display: flex;
+  margin: 0 2vmax;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+  .topicDetails {
+    grid-template-columns: 2fr;
+    margin-top: 13vmax;
+  }
+
+  .topic-container .topic-detail {
+    font: 100 2vmax "Roboto";
+  }
+
+  .topic-container .topic-details {
+    font: 100 2vmax "Roboto";
+  }
+
+  .replies-container {
+    margin-bottom: 2vmax;
+  }
+
+  .replies-container > h2 {
+    font: 500 4.5vmax "Roboto";
+  }
+
+  .reply-name > h4 {
+    font: 500 2.8vmax cursive;
+  }
+
+  .reply-comment > p {
+    font: 200 2vmax "Roboto";
+  }
+}
